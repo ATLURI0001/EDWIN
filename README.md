@@ -12,7 +12,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5+-3178C6.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC.svg?logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
 
-[Architecture](#-architecture) • [Features](#-core-capabilities) • [Quick Start](#-quick-start) • [Environment](#-configuration) • [Disclaimer](#-ethical--legal-disclaimer)
+[Architecture](#-architecture) • [Supported Glasses](#-supported-smart-glasses--hardware) • [Features](#-core-capabilities) • [Quick Start](#-quick-start) • [Environment](#-configuration) • [Disclaimer](#-ethical--legal-disclaimer)
 
 </div>
 
@@ -20,32 +20,43 @@
 
 ## ⚡ Overview
 
-**EDWIN** transforms smart glasses (e.g., Meta Ray-Ban) or live camera streams into an autonomous reconnaissance engine. When a subject appears in view, EDWIN extracts facial biometrics, dispatches a parallel swarm of browser agents to research their background across the open web, and projects an interactive, military-grade corkboard dossier in real time.
+**EDWIN** transforms smart eyewear—including **Ray-Ban Meta** and **Oakley Meta** smart glasses—or live video streams into an autonomous reconnaissance engine. When a subject appears in your field of view, EDWIN extracts facial biometrics, dispatches a parallel swarm of browser agents to research their background across the open web, and projects an interactive, military-grade corkboard dossier in real time.
 
 ```
-[ Camera / Glasses Feed ] ────────► [ MediaPipe + ArcFace Biometrics ]
-                                                │
-                                                ▼
-                                    [ Reverse Visual Search ]
-                                                │
-                 ┌──────────────────────────────┴──────────────────────────────┐
-                 ▼                                                             ▼
-     [ Exa Fast Enrichment ]                                      [ Browser-Use Agent Swarm ]
-  (News, Articles, Profiles)                                     (LinkedIn, X, GitHub, Web)
-                 │                                                             │
-                 └──────────────────────────────┬──────────────────────────────┘
-                                                ▼
-                                  [ Claude / Gemini Synthesis ]
-                                                │
-                                                ▼
-                               [ Reactive Tactical Corkboard HUD ]
+[ Meta Ray-Ban / Oakley Meta / Video Stream ] ──► [ MediaPipe + ArcFace Biometrics ]
+                                                                 │
+                                                                 ▼
+                                                     [ Reverse Visual Search ]
+                                                                 │
+                  ┌──────────────────────────────┴──────────────────────────────┐
+                  ▼                                                             ▼
+      [ Exa Fast Enrichment ]                                      [ Browser-Use Agent Swarm ]
+   (News, Articles, Profiles)                                     (LinkedIn, X, GitHub, Web)
+                  │                                                             │
+                  └──────────────────────────────┬──────────────────────────────┘
+                                                 ▼
+                                   [ Claude / Gemini Synthesis ]
+                                                 │
+                                                 ▼
+                                [ Reactive Tactical Corkboard HUD ]
 ```
+
+---
+
+## 👓 Supported Smart Glasses & Hardware
+
+EDWIN is engineered for seamless wearable optical capture across the Meta / EssilorLuxottica smart glasses ecosystem:
+
+* 🕶️ **Ray-Ban Meta Smart Glasses** *(Wayfarer, Headliner, Skyler)*: Native streaming integration for real-time video frames and audio transcription.
+* 🏃 **Oakley Meta Smart Glasses**: Performance sports optics compatibility for dynamic, on-the-move field intelligence gathering.
+* 📱 **Mobile & RTSP Streams**: Connect any phone camera or wearable rig via WebRTC/RTSP or Telegram photo intake bot.
+* 💻 **Webcam & Local Video**: Run local simulations using any standard USB webcam or pre-recorded evaluation footage.
 
 ---
 
 ## 🚀 Core Capabilities
 
-* **Hardware & Stream Ingestion:** Ingests live RTSP/WebRTC streams from smart glasses, mobile cameras, or Telegram intake bots.
+* **Hardware & Stream Ingestion:** Ingests live RTSP/WebRTC streams from Ray-Ban Meta and Oakley Meta smart glasses, mobile cameras, or Telegram intake bots.
 * **Neural Face Embeddings:** High-speed face detection via MediaPipe coupled with ArcFace-style feature embeddings and reverse-image correlation.
 * **Autonomous Swarm Reconnaissance:** Spawns headless Browser-Use sessions across LinkedIn, X (Twitter), Google, and public registries simultaneously.
 * **Dual-Tier Intelligence Synthesis:** Synthesizes structured dossiers using Claude 3.5 Sonnet with automated fallback to Gemini 2.0 Flash.
